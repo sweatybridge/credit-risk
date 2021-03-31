@@ -47,7 +47,8 @@ train {
         MODEL_VER = "lightgbm"
         NUM_LEAVES = "34"
         MAX_DEPTH = "8"
-        ENV_TYPE = "gcp"
+        DATA_BUCKET = "gs://bedrock-sample/"
+        TEMP_BUCKET = "gs://span-temp-production/"
     }
 }
 

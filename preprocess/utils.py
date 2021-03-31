@@ -17,15 +17,11 @@ def timer(title):
 
 
 def get_bucket_prefix():
-    return (
-        "s3://bedrock-sample/" if os.getenv("ENV_TYPE") == "aws" else "gs://bedrock-sample/"
-    )
+    return os.getenv("DATA_BUCKET", "s3://bedrock-sample/")
 
 
 def get_temp_bucket_prefix():
-    return (
-        "s3://span-production-temp-data/" if os.getenv("ENV_TYPE") == "aws" else "gs://span-temp-production/"
-    )
+    return os.getenv("TEMP_BUCKET", "s3://span-production-temp-data/")
 
 
 def get_execution_date():
