@@ -1,7 +1,7 @@
 bdrk[model-monitoring,analyzer]==0.7.2
 fastparquet==0.5.0
 lightgbm==3.1.1
-numpy==1.20.1
+numpy==1.22.0
 pandas==1.2.2
 pytz==2021.1
 s3fs==0.5.2
